@@ -1,20 +1,26 @@
 // assets/css/global.scss
 
 // customize some Bootstrap variables
-$body-bg: #a10000;
+$body-bg: #b6815f;
 
 
 $theme-colors: (
         "primary": #6c1002,
-        "secondary": #935a30,
+        "secondary": #b6815f,
+        "tertiary": #343a40,
         "mainColorText": #ffff,
 );
-
-
 
 // the ~ allows you to reference things in node_modules
 @import "~bootstrap/scss/bootstrap";
 
+.card-img-top {
+  max-height: 878px;
+}
+
+.card-body {
+  max-height: 209px;
+}
 
 
 
