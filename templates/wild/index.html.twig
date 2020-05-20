@@ -11,7 +11,10 @@
         <button type="submit" name="btnSearch">Rechercher</button>
         {{ form_end(form) }}
         <br/>
+        <a class="btn btn-dark m-3" href="../program/new">Ajouter une séries</a>
+        <a class="btn btn-dark m-3" href="../program">Modifier une séries</a>
     </div>
+
 
     <div class="row row-cols-1 row-cols-md-3">
         {% for program in programs %}
