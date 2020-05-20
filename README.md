@@ -8,3 +8,6 @@ https://www.loom.com/share/e07aa2f7483648e882c4eb576e4fe8f3
 
 Quest 11: gardez la form
 https://www.loom.com/share/b1ec200af7fd43c49e69b93970c3b26c
+
+Quest 12: Générer un CRUD
+https://www.loom.com/share/a739cfbcd04d4fa3a6aad34289be3525 (petit loupé sur la fin ^^)
