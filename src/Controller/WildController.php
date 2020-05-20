@@ -10,6 +10,9 @@ use Psr\Container\ContainerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\HttpFoundation\Request;
+use App\Form\ProgramSearchType;
+use Doctrine\ORM\EntityManagerInterface;
 
 /**
  * @Route("/wild", name="wild_")
@@ -20,24 +23,27 @@ class WildController extends AbstractController
      * Show all row from Program's entity
      *
      * @Route("/", name="index")
+     * @param Request $request
      * @return Response A response instance
      */
     public function index(): Response
     {
+        $form = $this->createForm(ProgramSearchType::class, null,
+            ['method' => Request::METHOD_GET]
+        );
+
         $programs = $this->getDoctrine()
             ->getRepository(Program::class)
             ->findAll();
-
         if (!$programs) {
-            throw $this->createNotFoundException(
-                'No program found in program\'s table.'
-            );
+            throw $this->createNotFoundException('No program found in program\'s table.');
         }
-
-        return $this->render(
-            'wild/index.html.twig',
-            ['programs' => $programs]
+        return $this->render('wild/index.html.twig', [
+                'programs' => $programs,
+                'form' => $form->createView(),
+            ]
         );
+
     }
 
 

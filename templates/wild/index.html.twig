@@ -3,8 +3,15 @@
 {% block title %}All programs{% endblock %}
 
 {% block body %}
+    <div>
     <h1>Toutes les séries : </h1>
     <br/>
+        {{ form_start(form) }}
+        {{ form_row(form.searchField) }}
+        <button type="submit" name="btnSearch">Rechercher</button>
+        {{ form_end(form) }}
+        <br/>
+    </div>
 
     <div class="row row-cols-1 row-cols-md-3">
         {% for program in programs %}
@@ -27,4 +34,5 @@
     <a class="btn btn-dark m-3" href="{{ path('app_index') }}">
         Retour à l'accueil
     </a>
+
 {% endblock %}
