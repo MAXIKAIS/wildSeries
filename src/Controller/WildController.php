@@ -47,7 +47,6 @@ class WildController extends AbstractController
     }
 
 
-
     /**
      *
      * @param string $categoryName
