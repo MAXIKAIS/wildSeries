@@ -23,7 +23,20 @@ $theme-colors: (
   min-height: 209px;
 }
 
+label {
+ display: block;
+}
 
+#program_title,#program_summary,#program_poster,#program_synopsis,#program_country,#program_year {
+  width: 100%;
+}
 
+#program_Category {
+  height: 38px;
+}
+
+#program {
+  text-align: center;
+}
 
 
