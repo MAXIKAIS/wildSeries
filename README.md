@@ -17,3 +17,6 @@ https://www.loom.com/share/c222730559754280977c12ed00dadf88 (nouveau petit loup√
 
 Quest 14: relations ManyToMany
 https://www.loom.com/share/368ab32586b7404ea41b8b712d6d14a0
+
+Quest 15: EntityType
+https://www.loom.com/share/1620d509d6d44fabad0f873d3429c8f3
