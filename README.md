@@ -20,3 +20,6 @@ https://www.loom.com/share/368ab32586b7404ea41b8b712d6d14a0
 
 Quest 15: EntityType
 https://www.loom.com/share/1620d509d6d44fabad0f873d3429c8f3
+
+Quest 16: Les fixtures
+https://www.loom.com/share/050be3e959984f8d93502a2697162799
