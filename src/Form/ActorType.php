@@ -3,6 +3,7 @@
 namespace App\Form;
 
 use App\Entity\Actor;
+use phpDocumentor\Reflection\Types\Null_;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
@@ -13,7 +14,7 @@ class ActorType extends AbstractType
     {
         $builder
             ->add('name')
-            ->add('programs')
+            ->add('programs', Null, ['choice_label' => 'title'])
         ;
     }
 
