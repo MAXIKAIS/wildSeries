@@ -15,7 +15,7 @@ $theme-colors: (
 @import "~bootstrap/scss/bootstrap";
 
 .card-img-top {
-  max-height: 878px;
+  max-height: 600px;
 }
 
 .card-body {
@@ -37,6 +37,10 @@ label {
 
 #program {
   text-align: center;
+}
+
+.imageActor {
+  max-height: 250px;
 }
 
 
