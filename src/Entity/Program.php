@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use DateTime;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
@@ -84,6 +85,12 @@ class Program
      * @var File
      */
     private $posterFile;
+
+    /**
+     * @ORM\Column(type="datetime")
+     * @var \DateTimeInterface|null
+     */
+    private $updatedAt;
 
     public function __construct()
     {
@@ -216,10 +223,12 @@ class Program
         return $this;
     }
 
-    public function setPosterFile(File $image = null): self
+    public function setPosterFile(File $image = null)
     {
         $this->posterFile = $image;
-        return $this;
+        if ($image) {
+            $this->updatedAt = new DateTime('now');
+        }
     }
 
     public function getPosterFile(): ?File
