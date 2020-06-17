@@ -23,3 +23,6 @@ https://www.loom.com/share/1620d509d6d44fabad0f873d3429c8f3
 
 Quest 16: Les fixtures
 https://www.loom.com/share/050be3e959984f8d93502a2697162799
+
+Quest 27: Vich Upload
+https://www.loom.com/share/6403560ec16c40bd90b98bc300aaeee9
